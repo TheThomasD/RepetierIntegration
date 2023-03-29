@@ -48,7 +48,7 @@ Cura.MachineAction
                 text: catalog.i18nc("@action:button", "Add");
                 onClicked:
                 {
-                    manualPrinterDialog.showDialog("", "", "80", "/", false, "", "");
+                    manualPrinterDialog.showDialog("", "192.168.0.144", "3344", "/", false, "", "");
                 }
             }
 
@@ -515,7 +515,7 @@ Cura.MachineAction
                 TextField
                 {
                     id: nameField
-                    maximumLength: 20
+                    maximumLength: 40
                     width: Math.floor(parent.width * 0.6)    
                     validator: RegExpValidator
                     {
